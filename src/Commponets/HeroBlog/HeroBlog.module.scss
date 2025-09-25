@@ -1,0 +1,51 @@
+.root {
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 150px;
+  .row {
+    padding-top: 150px;
+    min-height: 500px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding-inline: 50px;
+  }
+
+  .badge {
+    font-size: 24px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 10%;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+  .blogPostContent {
+    font-size: 48px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    min-height: 350px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
