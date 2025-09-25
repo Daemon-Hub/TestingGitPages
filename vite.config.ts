@@ -4,6 +4,9 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
+	build: {
+		outDir: 'docs'  // Измените 'dist' на 'docs'
+	},
 	server: {
 		host: '0.0.0.0',
 		port: 5173,
