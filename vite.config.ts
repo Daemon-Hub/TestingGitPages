@@ -4,8 +4,9 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
+	base: process.env.BASE_PATH || '/',
 	build: {
-		outDir: 'docs'  // Измените 'dist' на 'docs'
+		outDir: process.env.BASE_PATH ? 'docs' : 'dist'  
 	},
 	server: {
 		host: '0.0.0.0',
